@@ -5,9 +5,9 @@
 <?php foreach ($db->query('SELECT * FROM articles','App\Table\Article') as $post ): ?>
 
       
-    <h2> <a href="<?php $post->getURL()  ?>"><?= $post->titre; ?></a> </h2>
+    <h2> <a href="<?php echo $post->url  ?>"><?= $post->titre; ?></a> </h2>
    
-    <p><?php $post->getExtrait() ; ?></p>
+    <p><?php echo $post->extrait ; ?></p>
 
      
 

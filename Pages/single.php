@@ -1,1 +1,8 @@
-<h1 class="title"> Je suis la single pages </h1>
+<?php
+$post =$db->prepare("SELECT * FROM articles WHERE id = ?", [$_GET['id']], 'App\Table\Article',true);
+var_dump($post);
+
+?>
+
+<h1 class="title"><?= $post->titre; ?> </h1>
+<p><?= $post->contenu; ?></p>

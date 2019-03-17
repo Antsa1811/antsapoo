@@ -16,7 +16,7 @@ ob_start();
 
 if($p === "home"){
     require'../Pages/home.php';
-}elseif($p === 'single'){
+}elseif($p === 'article'){
     require '../Pages/single.php';
 }
 
