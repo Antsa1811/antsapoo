@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home Pages</title>
+        <title><?= App\App::getTitle(); ?></title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="../Public/css/bulma.min.css"/>
         <link rel="stylesheet" href="../Public/css/style.css"/>

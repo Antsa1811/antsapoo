@@ -10,7 +10,7 @@ if(isset($_GET['p'])){
 }
 
 //Initialisations des databases
-$db = new App\Database('poo');
+
 
 ob_start();
 
@@ -18,6 +18,10 @@ if($p === "home"){
     require'../Pages/home.php';
 }elseif($p === 'article'){
     require '../Pages/single.php';
+}elseif($p === 'categorie'){
+    require '../Pages/categorie.php';
+}elseif($p === '404'){
+    require '../Pages/404.php';
 }
 
 $content= ob_get_clean();
