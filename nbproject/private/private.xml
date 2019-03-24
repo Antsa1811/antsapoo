@@ -9,6 +9,8 @@
             <file>file:/C:/laragon/www/pooAntsa/App/Database.php</file>
             <file>file:/C:/laragon/www/pooAntsa/App/Config.php</file>
             <file>file:/C:/laragon/www/pooAntsa/Public/index.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/App/Table/Table.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/App/Table/CategoriesTable.php</file>
         </group>
     </open-files>
 </project-private>

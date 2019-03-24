@@ -4,7 +4,10 @@ App\Autoloader::register();
 
 $app=App\App::getInstance();
 
-$app->title ="Titre de teste";
+$post = $app->getTable('Posts');
+
+
+
 
 
 
