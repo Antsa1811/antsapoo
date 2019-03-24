@@ -2,6 +2,13 @@
 require '../App/Autoloader.php';
 App\Autoloader::register();
 
+$app=App\App::getInstance();
+
+$app->title ="Titre de teste";
+
+
+
+/*
 if(isset($_GET['p'])){
     $p=$_GET['p'];
 }else
@@ -9,7 +16,7 @@ if(isset($_GET['p'])){
     $p="home";
 }
 
-//Initialisations des databases
+
 
 
 ob_start();
@@ -27,3 +34,4 @@ if($p === "home"){
 $content= ob_get_clean();
 
 require '../Pages/Templates/default.php';
+*/
