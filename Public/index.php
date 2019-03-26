@@ -1,15 +1,16 @@
 <?php
-require '../App/Autoloader.php';
-App\Autoloader::register();
+define('ROOT',dirname(__DIR__));
 
-$app=App\App::getInstance();
+require ROOT .'/App/App.php';
 
-$post = $app->getTable('Posts');
+App::load();
 
-var_dump($post->all());
+$app=App::getInstance();
 
 
-/*
+
+
+
 if(isset($_GET['p'])){
     $p=$_GET['p'];
 }else
@@ -23,16 +24,18 @@ if(isset($_GET['p'])){
 ob_start();
 
 if($p === "home"){
-    require'../Pages/home.php';
+    require ROOT . '/Pages/Posts/home.php';
 }elseif($p === 'article'){
-    require '../Pages/single.php';
-}elseif($p === 'categorie'){
-    require '../Pages/categorie.php';
-}elseif($p === '404'){
-    require '../Pages/404.php';
+    require ROOT . '/Pages/Posts/show.php';
+}elseif($p === 'posts.category'){
+    require ROOT .'/Pages/Posts/category.php';
+}elseif($p === 'posts.show'){
+    require ROOT .'/Pages/Posts/show.php';
+}
+elseif($p === '404'){
+    require ROOT .'/Pages/Posts/404.php';
 }
 
 $content= ob_get_clean();
 
-require '../Pages/Templates/default.php';
-*/
+require ROOT .'/Pages/Templates/default.php';

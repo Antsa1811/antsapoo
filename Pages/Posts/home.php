@@ -2,7 +2,7 @@
 
 <div class="columns">
     <div class="column">
-        <?php foreach (\App\Table\Article::getLast() as $post ): ?>
+        <?php foreach (App::getInstance()->getTable('Post')->last() as $post ): ?>
 
    
       
@@ -19,7 +19,7 @@
     
     <div class="column">
         <ul>
-         <?php foreach(\App\Table\Categorie::all() as $categorie) :  ?>
+         <?php foreach(App::getInstance()->getTable('Category')->all() as $categorie) :  ?>
             
             <li> <a href="<?= $categorie->url;  ?>"><?= $categorie->titre; ?></a> </li>
         <?php endforeach; ?>

@@ -3,14 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/laragon/www/pooAntsa/App/App.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/Pages/home.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/Pages/single.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/App/Database.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/App/Config.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/Pages/Templates/default.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/Pages/Articles/single.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/Pages/Articles/categorie.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/Core/Table/Table.php</file>
+            <file>file:/C:/laragon/www/pooAntsa/Pages/Articles/home.php</file>
             <file>file:/C:/laragon/www/pooAntsa/Public/index.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/App/Table/Table.php</file>
-            <file>file:/C:/laragon/www/pooAntsa/App/Table/CategoriesTable.php</file>
         </group>
     </open-files>
 </project-private>

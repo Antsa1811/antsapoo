@@ -1,17 +1,14 @@
 <?php
 
-use App\Table\Article;
-use App\Table\Categorie;
-use App\App;
+$app = App::getInstance();
 
-$categorie = Categorie::find($_GET['id']);
+$categorie =$app->getTable('category')->find($_GET['id']);
 
- if($categorie === false){
-     \App\App::notFound();
- }
-
-$articles = Article::lastByCategory($_GET['id']);
-$categories=Categorie::all();
+if($categorie === false){
+    $app->notFound();
+}
+$articles =$app->getTable('Post')->lastByCategory($_GET['id']);
+$categories=$app->getTable('Category')->all();
 
 
 ?>
@@ -37,7 +34,7 @@ $categories=Categorie::all();
     
     <div class="column">
         <ul>
-         <?php foreach(\App\Table\Categorie::all() as $categorie) :  ?>
+         <?php foreach($categories as $categorie) :  ?>
             
             <li> <a href="<?= $categorie->url;  ?>"><?= $categorie->titre; ?></a> </li>
         <?php endforeach; ?>
