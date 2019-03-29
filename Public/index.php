@@ -32,6 +32,12 @@ if($p === "home"){
 }elseif($p === 'posts.show'){
     require ROOT .'/Pages/Posts/show.php';
 }
+elseif($p === 'login'){
+    require ROOT .'/Pages/Users/login.php';
+}
+elseif($p === 'admin'){
+    require ROOT .'/Pages/Public/admin.php';
+}
 elseif($p === '404'){
     require ROOT .'/Pages/Posts/404.php';
 }

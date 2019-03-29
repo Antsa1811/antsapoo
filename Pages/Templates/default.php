@@ -13,6 +13,8 @@
                     <div class="lien">
                        <a href="index.php?p=home">Home</a>
                        <a href="index.php?p=single" >Single</a>
+                       <a href="index.php?p=login" >login</a>
+                       <a href="index.php?p=admin" >Admin</a>
                    </div>   
                 </div>
            
